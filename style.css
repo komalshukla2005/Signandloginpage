@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/013/755/470/non_2x/abstract-background-close-up-web-or-net-with-golden-lines-glowing-effect-applicable-for-website-banner-poster-sign-corporate-social-media-templates-futuristic-backgrounds-header-and-landing-page-vector.jpg');
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form-box{
+    width:90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: pink;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color:red;
+    position: relative;
+}
+h2::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%); /* Changed translate(-50%) to translateX(-50%) */
+}
+
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    min-height:auto;
+    transition:max-height 0.5s;
+    overflow: hidden;
+
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+i{
+    margin-left: 15px;
+    color:#999;
+}
+
+p{
+    text-align: left;
+    font-size: 15px;
+}
+p a{
+    text-decoration: none;
+    color: #3c00a0;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    flex-basis: 48%;
+    background: #3c00a0;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition:background 1s;
+}
+.input-group{
+    height: 280px;
+}
+
+.off{
+     background-color: #fff;
+    color: black;
+}
